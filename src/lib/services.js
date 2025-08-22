@@ -1,8 +1,8 @@
  export const labelServicesData = {
  barcodeLabelsContent : {
-  title: "🏷️ Barcode Labels – Track, Identify & Simplify",
+  title: "Barcode Labels",
   slug: "barcode-labels",
-  image: "/cartoon.png",
+  image: "/service1.png",
 
   about: "At S.R.S.B. Barcode Solutions, our Barcode Labels are engineered to provide fast, accurate, and reliable identification across industries like retail, manufacturing, logistics, pharmaceuticals, electronics, and FMCG. Whether you need barcode stickers for inventory control, product labeling, shipping, or compliance — we manufacture custom barcode labels to meet your exact needs. Available in various formats such as Code 128, EAN-13, UPC, QR Code, Data Matrix, and more, our labels are printed using high-resolution thermal or inkjet printers on materials like paper, polyester (PET), vinyl, or synthetic films — all with durable adhesives suited for indoor or outdoor use.",
 
@@ -41,7 +41,7 @@
 },
 
  barcodeLabelPrintingSoftwareContent : {
-  title: "💻 Barcode Label Printing Software – Smart, Scalable & Easy-to-Use",
+  title: "Barcode Label Printing Software",
   slug: "barcode-label-printing-software",
   image: "/service2.png",
 
@@ -82,7 +82,7 @@
 },
 
    transparentProductLabelsContent : {
-  title: "🏷️ Transparent & Product Labels – Seamless Visibility, Strong Brand Impact",
+  title: "Transparent & Product Labels",
   slug: "transparent-product-labels",
   image: "/service3.png",
 
@@ -121,9 +121,9 @@
   ]
 },
   labelStickersPrintingContent : {
-  title: "🖨️ Label Stickers Printing Services – Precision Prints That Stick With Your Brand",
+  title: "Label Stickers Printing Services",
   slug: "label-stickers-printing-services",
-  image: "/marketplace.png",
+  image: "/service4.png",
 
   about: "At S.R.S.B. Barcode Solutions, we specialize in custom label sticker printing services that combine quality, speed, and versatility. Whether you're labeling products, packaging, bottles, containers, boxes, or promotional items — our label printing solutions are tailored to suit your industry, material, and branding requirements. With decades of experience in printing barcode stickers, product labels, price tags, hologram labels, transparent stickers, tamper-evident labels, and more — we provide end-to-end solutions from design to delivery, all under one roof.",
 
@@ -162,7 +162,7 @@
 },
 
   jewelleryTagLabelsContent : {
-  title: "💎 Paper Jewellery Tag Labels – Elegant, Informative & Brand-Ready",
+  title: "Paper Jewellery Tag Labels",
   slug: "paper-jewellery-tag-labels",
   image: "/service5.png",
 
@@ -203,9 +203,9 @@
 },
 
   wovenLabelsContent : {
-  title: "🧵 Woven Labels – Durable Identity Woven into Every Stitch",
+  title: "Woven Labels",
   slug: "woven-labels",
-  image: "/service6.png",
+  image: "/woven.png",
 
   about: "At S.R.S.B. Barcode Solutions, our Woven Labels are a premium branding solution used across garments, fashion accessories, footwear, home textiles, uniforms, and more. Woven from high-quality threads (like polyester or cotton), these labels are sewn directly into products, giving a high-end, permanent branding impression. Whether you need brand name labels, size tags, logo labels, or care instructions, we offer fully customizable woven labels in various weaves such as damask, satin, and taffeta, crafted to match your aesthetic, durability, and comfort requirements.",
 
@@ -243,9 +243,9 @@
 },
 
    imeiLabelsContent : {
-  title: "📲 IMEI Labels – Precision Tracking for Mobile Devices",
+  title: "IMEI Labels",
   slug: "imei-labels",
-  image: "/service7.png",
+  image: "/ime.png",
 
   about: "At S.R.S.B. Barcode Solutions, our IMEI Labels are engineered for accuracy, durability, and compliance. IMEI (International Mobile Equipment Identity) labels are essential for uniquely identifying mobile devices, ensuring traceability throughout the manufacturing, logistics, and retail processes. We specialize in high-resolution, tamper-proof, and scannable labels that meet the strict requirements of mobile manufacturers, OEMs, and service providers. Our IMEI labels are fully customizable with serial numbers, barcodes, QR codes, logos, and can be printed on a wide range of substrates, including polyester, vinyl, PET, and paper — all using scratch-resistant, permanent adhesive.",
 
@@ -283,9 +283,9 @@
 },
 
  footwearLabelsContent : {
-  title: "👟 Footwear Labels – Built to Last, Designed to Inform",
+  title: "Footwear Labels",
   slug: "footwear-labels",
-  image: "/shoes.png",
+  image: "/service8.png",
 
   about: "At S.R.S.B. Barcode Solutions, our Footwear Labels are engineered for resilience and clarity in some of the most rugged product environments. Whether it's shoe tongue labels, insole stickers, size markers, or branding tags, our labels are built to withstand moisture, abrasion, and friction — while displaying critical information like size, model number, material composition, pricing, and brand identity. Ideal for manufacturers, exporters, wholesalers, and retail chains, we offer fully customizable labeling options compatible with sports shoes, sandals, leather boots, sneakers, formal wear, and safety footwear.",
 
@@ -324,9 +324,9 @@
 },
 
  garmentLabelsContent : {
-  title: "👕 Garment Labels – Branding Woven into Every Thread",
+  title: "Garment Labels",
   slug: "garment-labels",
-  image: "/garmentlabel.png",
+  image: "/service9.png",
 
   about: "At S.R.S.B. Barcode Solutions, our Garment Labels are crafted to reflect your brand’s identity, deliver product information, and comply with textile regulations. From woven labels and satin care labels to size tags, brand tags, and heat transfer labels, we provide everything your apparel line needs to make a strong and lasting impression. Whether you are a boutique brand, an export house, or a mass manufacturer, we offer custom labels tailored to fabric type, placement, and branding style — ensuring your garments are as professional on the inside as they are on the outside.",
 
@@ -363,9 +363,9 @@
 },
 
   mobileAccessoriesContent :{
-  title: "📱 Mobile Accessories – Enhance Your Device, Empower Your Brand",
+  title: "Mobile Accessories",
   slug: "mobile-accessories",
-  image: "/mobileaccessories.png",
+  image: "/service10.png",
 
   about: "At S.R.S.B. Barcode Solutions, we offer a wide range of mobile accessories designed to complement modern lifestyles and support retail businesses. Our portfolio includes protective covers, tempered glass, charging cables, earbuds, mounts, cleaning kits, and more — available for both Android and iOS platforms. Whether you’re a retailer, wholesaler, or distributor, our products are crafted for durability, style, and high turnover at retail shelves. All accessories are sourced from reliable manufacturers and undergo strict quality checks to ensure they meet performance standards and aesthetic appeal. We focus on value-driven pricing, bulk availability, and packaging-ready presentation.",
 
@@ -404,9 +404,9 @@
 },
 
   packagingLabelContent : {
-  title: "📦 Packaging Label – Powering Product Identity & Brand Impact",
+  title: "Packaging Label",
   slug: "packaging-label",
-  image: "/product.png",
+  image: "/service1.png",
 
   about: "At S.R.S.B. Barcode Solutions, our Packaging Labels are engineered to serve as more than just stickers — they are critical tools for branding, identification, compliance, and logistics. Since 2003, we have been supplying high-performance labeling solutions tailored to the specific needs of industries such as FMCG, pharmaceuticals, e-commerce, manufacturing, and logistics. Each label is manufactured using top-grade materials and advanced printing technology, ensuring your products stand out on shelves, remain traceable across the supply chain, and stay legally compliant. Whether you need waterproof labels for chilled goods or tamper-evident seals for secure packaging, we provide end-to-end customized solutions at wholesale scale.",
 
