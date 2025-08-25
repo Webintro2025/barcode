@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { labelServicesData } from '@/lib/services';
+import { FaWhatsapp } from 'react-icons/fa';
 
 
 const Navbar = () => {
@@ -22,11 +23,21 @@ const Navbar = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Use slugs and titles from labelServicesData
-  const servicesList = Object.values(labelServicesData).map(service => ({
-    title: service.title,
-    slug: service.slug
-  }));
+
+  // Services list with slugs from labelServicesData
+  const servicesList = [
+    { title: 'Barcode Generation & Label', slug: labelServicesData.barcodeGenerationLabel.slug },
+  { title: 'Mobile accessories & IMEI', slug: labelServicesData.mobileAccessoriesIMEI.slug },
+    { title: 'Product Labels & Hologram Labels', slug: labelServicesData.productHologramLabels.slug },
+    { title: 'Label Printing', slug: labelServicesData.labelPrinting.slug },
+  { title: 'Footwear Labels & Shop Label & Cartoon', slug: labelServicesData.footwearShopCartoon.slug },
+    { title: 'Garment Labels & Woven Labels &Taffeta Label', slug: labelServicesData.garmentWovenTaffeta.slug },
+    { title: 'RFID labels & RFID solutions', slug: labelServicesData.rfidLabelsSolutions.slug },
+    { title: 'Product labels & Transparent labels', slug: labelServicesData.productTransparentLabels.slug },
+    { title: 'Bakery labels, Foods product labels & Beverage labels', slug: labelServicesData.bakeryFoodBeverageLabels.slug },
+    { title: 'Voltage & Transformer labels &Cable labels & Hologram labels', slug: labelServicesData.voltageTransformerCableHologram.slug },
+    { title: 'Software Label', slug: labelServicesData.softwareLabel.slug },
+  ];
 
   return (
     <nav className="fixed top-10 sm:top-12 left-0 right-0 z-50 bg-white shadow-lg shadow-gray-400">
@@ -63,6 +74,7 @@ const Navbar = () => {
                     key={index}
                     href={`/service/${service.slug}`}
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-700 transition-all duration-200 border-l-3 border-transparent hover:border-indigo-500"
+                    onClick={handleNavClick}
                   >
                     {service.title}
                   </Link>
@@ -74,9 +86,15 @@ const Navbar = () => {
         </ul>
 
         {/* Desktop CTA Button */}
-        <button className="hidden md:block ml-6 rounded-md bg-gradient-to-r from-indigo-600 to-purple-600 px-4 lg:px-6 py-2 lg:py-3 text-sm lg:text-base text-white font-semibold hover:from-indigo-700 hover:to-purple-700 transition-colors">
-          Chat with us!
-        </button>
+        <a
+          href="https://wa.me/919810244624"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden md:flex items-center gap-2 ml-6 rounded-md bg-gradient-to-r from-green-500 to-green-700 px-4 lg:px-6 py-2 lg:py-3 text-sm lg:text-base text-white font-semibold hover:from-green-600 hover:to-green-800 transition-colors"
+        >
+          <FaWhatsapp className="text-xl" />
+          WhatsApp me
+        </a>
 
         {/* Mobile Menu Button */}
         <button
@@ -161,12 +179,16 @@ const Navbar = () => {
           
           {/* Mobile CTA Button */}
           <div className="mt-4 pb-2">
-            <button 
-              className="w-full rounded-md bg-gradient-to-r from-indigo-600 to-purple-600 px-4 py-3 text-base text-white font-semibold hover:from-indigo-700 hover:to-purple-700 transition-colors"
+            <a
+              href="https://wa.me/919810244624"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-center gap-2 rounded-md bg-gradient-to-r from-green-500 to-green-700 px-4 py-3 text-base text-white font-semibold hover:from-green-600 hover:to-green-800 transition-colors"
               onClick={handleNavClick}
             >
-              Chat with us!
-            </button>
+              <FaWhatsapp className="text-xl" />
+              WhatsApp me: 9810244624
+            </a>
           </div>
         </div>
       </div>

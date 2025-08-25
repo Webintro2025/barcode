@@ -1,5 +1,7 @@
+
 import React from 'react';
 import Link from 'next/link';
+import { labelServicesData } from '../lib/services';
 
 const Footer = () => {
   return (
@@ -33,31 +35,23 @@ const Footer = () => {
                 Our Services
               </h3>
               <div className=' w-16 lg:w-20 h-0.5 bg-blue-600 mb-3.5'></div>
-              <ul className="text-gray-300 text-xs lg:text-sm space-y-1 lg:space-y-1.5">
-                <li className="hover:text-blue-400 cursor-pointer transition-colors">
-                  Label Printing Services
-                </li>
-                <li className="hover:text-blue-400 cursor-pointer transition-colors">
-                  Jewellery Labels
-                </li>
-                <li className="hover:text-blue-400 cursor-pointer transition-colors">
-                  Woven Labels
-                </li>
-                <li className="hover:text-blue-400 cursor-pointer transition-colors">
-                  Packaging Labels
-                </li>
-                <li className="hover:text-blue-400 cursor-pointer transition-colors">
-                  Mobile IMEI Barcode
-                </li>
-                <li className="hover:text-blue-400 cursor-pointer transition-colors">
-                  Footwear Labels
-                </li>
-                <li className="hover:text-blue-400 cursor-pointer transition-colors">
-                  Garment Labels
-                </li>
-                <li className="hover:text-blue-400 cursor-pointer transition-colors">
-                  Mobile Accessories
-                </li>
+              <ul
+                className="text-gray-300 text-xs lg:text-sm space-y-1 lg:space-y-1.5 max-h-32 overflow-y-auto pr-2 custom-scrollbar"
+                style={{
+                  scrollbarWidth: 'thin',
+                  scrollbarColor: '#2563eb #1e293b', // blue-600 thumb, slate-900 track
+                }}
+              >
+                {Object.values(labelServicesData).map((service) => (
+                  <li key={service.slug}>
+                    <Link
+                      href={`/service/${service.slug}`}
+                      className="hover:text-blue-400 cursor-pointer transition-colors block"
+                    >
+                      {service.title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 

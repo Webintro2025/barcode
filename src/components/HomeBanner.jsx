@@ -11,6 +11,8 @@ const HomeBanner = () => {
 
 const banner = '/banner1.jpg'; // Replace with your actual image path
 const banner2 = '/banner2.jpg'; // Replace with your actual image path
+const banner3 = '/banner3.jpg'; // Replace with your actual image path
+
 
   const images = [banner, banner2];
 
@@ -71,7 +73,7 @@ const banner2 = '/banner2.jpg'; // Replace with your actual image path
   };
 
   return (
-    <div className="relative w-full overflow-hidden lg:bg-white mt-12 sm:mt-20 md:mt-20" style={{backgroundColor: '#671FD9'}}>
+    <div className="relative w-full overflow-hidden lg:bg-white mt-20 sm:mt-20 md:mt-24" style={{backgroundColor: '#671FD9'}}>
       <div className="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[500px]">
         <div
           className="relative w-full h-full mt-[49px] cursor-grab active:cursor-grabbing"

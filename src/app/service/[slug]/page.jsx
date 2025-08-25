@@ -32,7 +32,20 @@ export default function ServicePage({ params }) {
       <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-center text-gray-900 drop-shadow-lg tracking-tight">
         {service.title}
       </h1>
-      {service.image && (
+      {/* Show video for softwareLabel, else show image */}
+      {service.video ? (
+        <div className="overflow-hidden group rounded-xl mb-8 flex justify-center items-center bg-white" style={{ width: 320, height: 320 }}>
+          <video
+            src={service.video}
+            controls
+            className="object-contain w-full h-full"
+            style={{ width: '320px', height: '320px' }}
+            poster={service.image}
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      ) : service.image && (
         <div className="overflow-hidden group rounded-xl mb-8 flex justify-center items-center bg-white" style={{ width: 320, height: 320 }}>
           <img
             src={service.image}

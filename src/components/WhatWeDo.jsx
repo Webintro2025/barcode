@@ -1,95 +1,81 @@
-"use client";
+"use client"
 import React, { useState } from 'react';
 
-const WhatWeDo = () => {
-  const [expandedItems, setExpandedItems] = useState({});
+// Helper to truncate text to N words
+function truncateText(text, wordLimit) {
+  const words = text.split(' ');
+  if (words.length <= wordLimit) return text;
+  return words.slice(0, wordLimit).join(' ') + '...';
+}
 
-  const toggleExpanded = (id) => {
-    setExpandedItems(prev => ({
-      ...prev,
-      [id]: !prev[id]
-    }));
-  };
-
-  const truncateText = (text, maxWords = 10) => {
-    const words = text.split(' ');
-    if (words.length <= maxWords) return text;
-    return words.slice(0, maxWords).join(' ') + '...';
-  };
-  const services = [
+const services = [
     {
       id: 1,
-      icon: "📌",
-      title: "Barcode Labels",
-      description: "We supply high-quality barcode labels that are compatible with all major barcode printers. Ideal for inventory tracking, retail, logistics, and product management."
+      title: 'Barcode Gun & Cable',
+      description: 'High-quality barcode scanners and durable cables for fast, reliable data capture in any environment.',
+      icon: '🔫',
     },
     {
       id: 2,
-      icon: "🖥️",
-      title: "Barcode Printing Software",
-      description: "We offer reliable and user-friendly barcode printing software to help you design and print barcodes, QR codes, and product labels with ease and accuracy."
+  title: 'Mobile accessories & IMEI',
+      description: 'IMEI and mobile labeling solutions for device tracking, compliance, and inventory management.',
+      icon: '📱',
     },
     {
       id: 3,
-      icon: "🏷️",
-      title: "Product Labels / Stickers",
-      description: "Custom-designed labels to match your brand's identity and regulatory needs, used for consumer goods, packaging, and product marketing."
+      title: 'Product Labels & Hologram Labels',
+      description: 'Custom product and hologram labels for brand protection, authentication, and attractive packaging.',
+      icon: '🏷️',
     },
     {
       id: 4,
-      icon: "🖨️",
-      title: "Label Printing Services",
-      description: "Need labels printed in bulk? We provide fast, affordable, and professional label printing services using high-end equipment and quality materials."
+      title: 'Label Printing',
+      description: 'Professional label printing services for all industries, with a variety of materials and finishes.',
+      icon: '🖨️',
     },
     {
       id: 5,
-      icon: "💍",
-      title: "Jewellery Labels / Stickers",
-      description: "Specially designed small-size, non-tearable labels that are perfect for pricing and tagging in jewelry stores, without damaging delicate pieces."
+  title: 'Footwear Labels & Shop Label & Cartoon',
+      description: 'Specialized labels for footwear, retail shops, and custom coasters to enhance your brand.',
+      icon: '👟',
     },
     {
       id: 6,
-      icon: "🧵",
-      title: "Woven Labels / Stickers",
-      description: "Premium woven labels for garments and textiles, helping brands add a professional finishing touch to clothing and fabric products."
+      title: 'Garment Labels & Woven Labels &Taffeta Label',
+      description: 'Premium garment, woven, and taffeta labels for fashion, uniforms, and textile branding.',
+      icon: '👕',
     },
     {
       id: 7,
-      icon: "📦",
-      title: "Packaging Labels / Stickers",
-      description: "Durable packaging labels suitable for shipping, branding, and handling instructions. Available in waterproof, tamper-proof, and thermal variants."
+      title: 'RFID labels & RFID solutions',
+      description: 'RFID labels and complete RFID solutions for smart tracking, automation, and security.',
+      icon: '📶',
     },
     {
       id: 8,
-      icon: "📱",
-      title: "Mobile IMEI Barcode Labels / Stickers & Printing Services",
-      description: "We specialize in mobile phone IMEI barcode labels with high accuracy and print clarity, including batch printing and custom serialization."
+      title: 'Product labels & Transparent labels',
+      description: 'Clear and custom product labels for a seamless, professional look on any packaging.',
+      icon: '🪪',
     },
     {
       id: 9,
-      icon: "👟",
-      title: "Footwear Labels / Stickers",
-      description: "Customized footwear stickers used for shoe boxes, soles, and inner lining branding. Designed to be wear-resistant and long-lasting."
+      title: 'Bakery labels, Foods product labels & Beverage labels',
+      description: 'Attractive, food-safe labels for bakeries, food products, and beverages to boost shelf appeal.',
+      icon: '🍞',
     },
     {
       id: 10,
-      icon: "👕",
-      title: "Garment Labels / Stickers",
-      description: "We produce size tags, brand stickers, care instruction labels, and more for the apparel industry with durable adhesives and clear prints."
+      title: 'Voltage & Transformer labels &Cable labels & Hologram labels',
+      description: 'Durable voltage, transformer, cable, and hologram labels for industrial and electrical use.',
+      icon: '⚡',
     },
-    {
-      id: 11,
-      icon: "🔌",
-      title: "Mobile Accessories Labels / Stickers",
-      description: "Custom labels for mobile chargers, cables, cases, and other accessories, designed for brand authentication and packaging aesthetics."
-    },
-    {
-      id: 12,
-      icon: "🍦",
-      title: "Paper Ice Cream Labels",
-      description: "Specialized paper labels designed for ice cream packaging, cups, and containers. Food-safe, moisture-resistant, and perfect for freezer environments with vibrant colors that attract customers."
-    }
   ];
+
+const WhatWeDo = () => {
+  const [expandedItems, setExpandedItems] = useState({});
+  const toggleExpanded = (id) => {
+    setExpandedItems((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
 
   return (
     <div className="py-8 bg-white">
@@ -160,5 +146,8 @@ const WhatWeDo = () => {
     </div>
   );
 };
+
+
+
 
 export default WhatWeDo;
