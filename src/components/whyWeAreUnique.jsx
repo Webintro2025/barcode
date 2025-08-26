@@ -27,7 +27,7 @@ const  WhyWeAreUnique = () => {
           <div className="flex-1 lg:pl-8">
             <div className="relative">
               <img 
-                src="/unique.jpg" // Replace with your actual image path
+                src="/img6.png" // Replace with your actual image path
                 alt="Professional Barcode Solutions" 
                 className="w-full h-64 sm:h-80 md:h-96 lg:h-[400px] object-cover rounded-lg shadow-lg"
               />
