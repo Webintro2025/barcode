@@ -12,9 +12,9 @@ const HomeBanner = () => {
 const banner = '/banner1.jpg'; // Replace with your actual image path
 const banner2 = '/banner2.jpg'; // Replace with your actual image path
 const banner3 = '/banner3.jpg'; // Replace with your actual image path
+const banner4 = '/banner4.jpg'; // Replace with your actual image path
 
-
-  const images = [banner, banner2,banner3];
+  const images = [banner, banner2,banner3, banner4];
 
   // Minimum swipe distance required
   const minSwipeDistance = 50;

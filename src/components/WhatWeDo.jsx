@@ -9,67 +9,43 @@ function truncateText(text, wordLimit) {
 }
 
 const services = [
-    {
-      id: 1,
-      title: 'Barcode Gun & Cable',
-      description: 'High-quality barcode scanners and durable cables for fast, reliable data capture in any environment.',
-      icon: '🔫',
-    },
-    {
-      id: 2,
-  title: 'Mobile accessories & IMEI',
-      description: 'IMEI and mobile labeling solutions for device tracking, compliance, and inventory management.',
-      icon: '📱',
-    },
-    {
-      id: 3,
-      title: 'Product Labels & Hologram Labels',
-      description: 'Custom product and hologram labels for brand protection, authentication, and attractive packaging.',
-      icon: '🏷️',
-    },
-    {
-      id: 4,
-      title: 'Label Printing',
-      description: 'Professional label printing services for all industries, with a variety of materials and finishes.',
-      icon: '🖨️',
-    },
-    {
-      id: 5,
-  title: 'Footwear Labels & Shop Label & Cartoon',
-      description: 'Specialized labels for footwear, retail shops, and custom coasters to enhance your brand.',
-      icon: '👟',
-    },
-    {
-      id: 6,
-      title: 'Garment Labels & Woven Labels &Taffeta Label',
-      description: 'Premium garment, woven, and taffeta labels for fashion, uniforms, and textile branding.',
-      icon: '👕',
-    },
-    {
-      id: 7,
-      title: 'RFID labels & RFID solutions',
-      description: 'RFID labels and complete RFID solutions for smart tracking, automation, and security.',
-      icon: '📶',
-    },
-    {
-      id: 8,
-      title: 'Product labels & Transparent labels',
-      description: 'Clear and custom product labels for a seamless, professional look on any packaging.',
-      icon: '🪪',
-    },
-    {
-      id: 9,
-      title: 'Bakery labels, Foods product labels & Beverage labels',
-      description: 'Attractive, food-safe labels for bakeries, food products, and beverages to boost shelf appeal.',
-      icon: '🍞',
-    },
-    {
-      id: 10,
-      title: 'Voltage & Transformer labels &Cable labels & Hologram labels',
-      description: 'Durable voltage, transformer, cable, and hologram labels for industrial and electrical use.',
-      icon: '⚡',
-    },
-  ];
+  {
+    id: 1,
+    title: 'Barcode Printers, Billing Printers and Scanners',
+    icon: '🖨️',
+    description: `We sell and service high quality Barcode Printers and Scanners. The range covers one-dimensional, two-dimensional / QR Code Scanners, desktop Barcode Printers, Heavy-duty Industrial Barcode Printers of well-known brands like TSC, Zebra, Honeywell, Motorola, New Land, Toshiba etc. An in-house facility to component level repair of Barcode Printers and Scanners is our strength. This reduces the cost of repair as compared to the cost of repairs by companies who manufacture these products and ultimately the beneficiary is our customer only. We also provide stand-by printers and scanners till the product is repaired and sent back to the customer.`
+  },
+  {
+    id: 2,
+    title: 'IMEI Label / Barcode Label Printing Services',
+    icon: '📱',
+    description: `We specialize in job work of printing IMIE Barcode Labels for mobile manufacturers and assemblers. We also have state of the art facility to print barcode labels for manufacturers of Mobile Accessories, Shoes Manufacturers, Garments Manufacturers etc., on job-work basis.`
+  },
+  {
+    id: 3,
+    title: 'Product Labels & Holographic Labels',
+    icon: '🏷️',
+    description: `We specialize in printing of multi-color Product Labels of industries like Food & Beverage, Garments, Shoes, Mobile Phones Accessories, Fertilizers, Retailing, Healthcare, Electronics, Pharmaceuticals, agricultural Products, FMCG, Automobiles, Cold Storage, E-Commerce etc. We also provide tamper proof Security Labels, Void Labels and Holographic Labels for above mentioned industries.`
+  },
+  {
+    id: 4,
+    title: 'RFID Solutions and RFID Labels',
+    icon: '📶',
+    description: `To automate object Identification and tracking, we provide solutions thru state of the art RFID (Radio Frequency Identification) technology. We offer smart barcodes i.e., RFID Tags to track, locate and maintain inventory at large ware-houses, where it is very difficult to manage stock of a large number and variety of items. We also provide software solutions using RFID technology to increase efficiency, security, real-time tracking of assets and reduced labor cost for overall efficiency of any organization.`
+  },
+  {
+    id: 5,
+    title: 'ERP Software Solutions with IMPLEMENTATION',
+    icon: '💻',
+    description: `We specialize in system-study, development and implementation of ERP Software System which includes :\n(a) Inventory Management.\n(b) Order Processing.\n(c) Manufacturing.\n(d) Finance.\n(e) Supply Chain Management.`
+  },
+  {
+    id: 6,
+    title: 'Labels, Tags, Barcode Labels, QR Code Labels & Barcode Software',
+    icon: '🔖',
+    description: `We are having two decades of experience in the field of Labelling industry. We provide Self-adhesive labels (plain and printed) to various industries like Shoes, Garments, Food, Jewelry, Medicine, Shipping, Cables, Voltage-Transformers, Mobile Accessories, E-Commerce, Frozen-Food, Super-markets, Export-House, Bakery, Pharmaceuticals, cosmetics, Dry-Fruit etc.\nWe have thermal paper Labels, Paper Labels, Vinyle labels, heat resistant labels, water-proof labels, transparent labels, translucent labels, viod- labels, security labels, shipping labels, carton labels, packaging labels, Taffeta Labels, Woven Labels, Flag labels, pouch labels, bottling labels, Holograms, Handle with care labels, PVC Labels, Serial Stickers, very small semiconductor Labels, IMEI Labels. We have inventory of more than 100 sizes of labels and Ribbons, off the shelf. As we deal only in high quality branded paper, shelf life of our labels is more than two years.\nWe also deal in barcode and QR Code Printing software. It’s a very user friendly Software ever made for various types of industries. It prints thousands of labels at one go, which is linked to the Excel sheet, at press of a single button. A unique feature of this software is that it’s customizable as per user’s requirements.`
+  }
+];
 
 const WhatWeDo = () => {
   const [expandedItems, setExpandedItems] = useState({});
@@ -108,9 +84,9 @@ const WhatWeDo = () => {
               {/* Description */}
               <div className="text-gray-600 leading-relaxed">
                 <p className="mb-2">
-                  {expandedItems[service.id] ? service.description : truncateText(service.description, 10)}
+                  {expandedItems[service.id] ? service.description : truncateText(service.description, 30)}
                 </p>
-                {service.description.split(' ').length > 10 && (
+                {service.description.split(' ').length > 30 && (
                   <button 
                     onClick={() => toggleExpanded(service.id)}
                     className="text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors duration-200 focus:outline-none"
@@ -128,20 +104,6 @@ const WhatWeDo = () => {
           ))}
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center mt-8">
-          <div className="w-full bg-gradient-to-r from-purple-600 via-purple-700 to-purple-800 rounded-lg shadow-lg p-6">
-            <h3 className="text-2xl font-bold text-white mb-3">
-              Ready to Get Started?
-            </h3>
-            <p className="text-white mb-4">
-              Contact us today to discuss your labeling and barcode solution needs. We're here to help you find the perfect solution for your business.
-            </p>
-            <button className="bg-white text-purple-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-              Get in Touch
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );

@@ -7,10 +7,16 @@ const TopHeader = () => {
       {/* Contact Info - Hidden on very small screens, shown on sm and up */}
       <div className="hidden sm:flex items-center space-x-4 md:space-x-4 text-white text-xs sm:text-sm font-semibold">
         <FaPhoneAlt className="text-white" />
-        <span>+91-9810244624</span>
-        <span className="opacity-50 hidden md:inline">|</span>
-        <FaEnvelope className="text-white text-xs sm:text-sm hidden md:inline" />
-        <span className="hidden lg:inline">srsb.barcode@gmail.com</span>
+  <span>+91-9810244624</span>
+  <span className="opacity-50 hidden md:inline">|</span>
+  <span className="hidden md:inline">Landline: 011-41584342</span>
+  <span className="opacity-50 hidden md:inline">|</span>
+  <FaEnvelope className="text-white text-xs sm:text-sm hidden md:inline" />
+  <span className="hidden lg:inline">
+    <a href="mailto:info@srsb.com" className="hover:underline">info@srsb.com</a>
+    <span className="mx-2">|</span>
+    <a href="mailto:srsb.barcode@gmail.com" className="hover:underline">srsb.barcode@gmail.com</a>
+  </span>
       </div>
       
       {/* Mobile Contact Info - Only phone number on very small screens */}

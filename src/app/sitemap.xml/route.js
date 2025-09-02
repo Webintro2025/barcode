@@ -1,0 +1,43 @@
+import MarketPlace from '../../MarketPlace';
+import { labelServicesData } from '../../lib/services';
+
+export async function GET() {
+  const baseUrl = 'https://yourdomain.com'; // Change to your actual domain
+
+  // Static pages
+  const staticPages = [
+    '',
+    '/about',
+    '/contact',
+   
+  ];
+
+  // Service pages
+  const servicePages = Object.values(labelServicesData).map(
+    (service) => `/service/${service.slug}`
+  );
+
+  // Location pages
+  const locationPages = MarketPlace.map(
+    (loc) => `/${loc.replace(/\s+/g, '')}`
+  );
+
+  const allPages = [
+    ...staticPages,
+    ...servicePages,
+    ...locationPages,
+  ];
+
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n` +
+    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+    allPages.map((page) =>
+      `  <url>\n    <loc>${baseUrl}${page}</loc>\n  </url>`
+    ).join('\n') +
+    '\n</urlset>';
+
+  return new Response(sitemap, {
+    headers: {
+      'Content-Type': 'application/xml',
+    },
+  });
+}

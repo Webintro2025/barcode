@@ -1,6 +1,6 @@
 export const labelServicesData = {
     barcodeGenerationLabel: {
-      title: "Barcode Generation & Label",
+  title: "Barcode Generation , Label Design & Printing",
       slug: "barcode-generation-label",
       image: "/img1.png",
       about: `Our Barcode Generation & Label services empower businesses to create, manage, and print high-quality barcodes for any application. We offer a complete solution for generating all barcode types, including QR codes, EAN, UPC, Code 128, and more. Our team helps you design barcodes that are fully compliant with industry standards and tailored to your specific needs. Whether you need barcodes for retail, inventory, logistics, healthcare, or manufacturing, we ensure accuracy and reliability in every label. Our software tools allow for easy integration with your existing systems, enabling batch generation and automated workflows. We provide expert guidance on barcode placement, sizing, and printing for maximum scan efficiency. Our labels are printed on premium materials, available in various formats such as rolls, sheets, or custom cuts. We support both small and large volume orders, with fast turnaround and nationwide delivery. Security features like serialization and tamper-evident options are available for sensitive applications. Our service includes ongoing support, training, and documentation to help your team get the most out of barcode technology. Trust us for affordable pricing, compliance expertise, and a commitment to quality that sets your business apart.`,
@@ -34,7 +34,7 @@ export const labelServicesData = {
       ]
     },
     mobileAccessoriesIMEI: {
-      title: "Mobile accessories & IMEI",
+  title: "IMIE Label Printing & Mobile Accessories Labels",
       slug: "imei-mobile",
       image: "/img5.png",
   about: `Our Mobile accessories & IMEI labeling solutions are tailored for businesses that require secure, compliant, and efficient device tracking and accessory management. We specialize in high-precision IMEI label printing and mobile accessory labeling, ensuring every label is clear, scannable, and tamper-proof. Our labels are made from anti-fraud materials, providing an extra layer of security against counterfeiting and unauthorized tampering. We support bulk orders with variable data, allowing you to manage large inventories with ease. Custom shapes and sizes are available to fit any device or accessory, from smartphones to chargers, earphones, and more. Our fast turnaround times ensure you meet tight deadlines, even for urgent orders. IMEI labeling is mandatory for mobile device registration and is crucial for warranty and after-sales tracking. Our solutions help prevent theft and counterfeiting, meeting all telecom and customs regulations. We offer scratch-resistant and permanent adhesive options for long-lasting durability. Labels can be delivered in rolls, sheets, or individual formats to suit your workflow. Data privacy is a top priority, and our processes are fully compliant with industry standards. We guarantee zero-error data printing, trusted by leading mobile OEMs and assemblers. Our team can handle secure IMEI sequence management, ensuring confidentiality and accuracy. We provide custom roll configurations for auto-appliers and support both bulk and small batch orders. Our expertise extends to logistics, packaging, and compliance, making us a one-stop solution for all your mobile and accessory labeling needs.`,
@@ -68,7 +68,7 @@ export const labelServicesData = {
       ]
     },
     productHologramLabels: {
-      title: "Product Labels & Hologram Labels",
+  title: "Product Labels, Hologram Labels, Security Labels and Tamper-proof Labels",
       slug: "product-hologram-labels",
       image: "/img3.jpg",
   about: `Our Product Labels & Hologram Labels are designed to protect your brand and enhance your product’s visual appeal. We use advanced hologram technology to create anti-counterfeit labels that safeguard your products from duplication and fraud. Our labels are available in custom shapes, sizes, and finishes, allowing you to create a unique look for your brand. We cater to both bulk and small orders, providing flexibility for businesses of all sizes. Our design team offers support to ensure your labels align with your branding strategy. Quick delivery across India ensures you never miss a deadline. Hologram labels build consumer trust and meet compliance requirements for regulated products. They also boost product visibility on retail shelves, supporting warranty and authenticity programs. Our labels are tamper-evident and waterproof, with high-resolution printing for maximum impact. We offer eco-friendly material choices for businesses focused on sustainability. Labels are easy to apply on any surface and can be customized for any industry, from electronics to pharmaceuticals. In-house hologram manufacturing allows us to maintain strict quality control and offer personalized design and prototyping. We have a low minimum order quantity and provide fast sample turnaround. Trusted by top brands, our labels are the preferred choice for businesses seeking security and style.`,
@@ -102,7 +102,7 @@ export const labelServicesData = {
       ]
     },
     labelPrinting: {
-      title: "Label Printing",
+  title: "Label Printing & QR Code Printing Services",
       slug: "label-printing",
       image: "/img4.png",
   about: `Our Label Printing services offer comprehensive solutions for businesses across all industries. We utilize state-of-the-art printing machines to deliver sharp, vibrant labels that make your products stand out. Our services include custom shapes, sizes, and finishes to match your specific requirements. We support both bulk and urgent orders, ensuring you receive your labels on time, every time. Our design and prototyping assistance helps you visualize your labels before production begins. We use eco-friendly inks and materials, supporting your sustainability goals. Label printing enhances brand visibility and ensures product compliance with industry standards. It also improves logistics and inventory tracking, adding a professional touch to your packaging. Our labels are suitable for all surfaces and industries, from food and beverage to electronics and retail. We offer waterproof and scratch-resistant options for added durability. Choose from permanent or removable adhesives, as well as die-cut, roll, or sheet formats. Fast delivery is guaranteed nationwide. Our in-house design and printing capabilities ensure consistent quality and quick turnaround. We have experience across multiple industries and support variable data printing for personalized labels. Our dedicated support team is always available to assist you. Pan-India delivery ensures you can rely on us wherever your business operates.`,
@@ -136,7 +136,7 @@ export const labelServicesData = {
       ]
     },
     footwearShopCartoon: {
-      title: "Footwear Labels & Shop Label & Cartoon",
+  title: "Footwear Industry Labels & Carton Labels",
       slug: "footwear-shop-coaster",
       image: "/img2.png",
   about: `Our Footwear Labels, Shop Labels, and Custom Coasters are crafted to elevate your brand’s presence in the retail environment. We provide industry-specific labeling solutions for all types of footwear, ensuring compliance with export and retail standards. Our custom shop labels and coasters are designed to be both functional and visually appealing, helping your business stand out. We use waterproof and abrasion-resistant materials to ensure longevity, even in high-traffic areas. Full branding capabilities allow you to showcase your logo, colors, and messaging. Our fast turnaround times are ideal for bulk orders and urgent needs. Labels help customers make informed decisions and build trust in your brand. They also streamline inventory and logistics, making operations more efficient. Our printing techniques include color print, embossing, and foil-stamping for a premium finish. We offer custom-cut labels for any shape and skin-friendly materials for comfort. Our expertise extends to batch accuracy and fast reorders, ensuring you never run out of essential supplies. We are your one-stop partner for all labeling needs, including custom coaster design and printing.`,
@@ -170,7 +170,7 @@ export const labelServicesData = {
       ]
     },
     garmentWovenTaffeta: {
-      title: "Garment Labels & Woven Labels &Taffeta Label",
+  title: "Garments Labels, Woven Labels, Satin Labels & Taffeta Labels",
       slug: "garment-woven-taffeta",
       image: "/img6.png",
   about: `Our Garment Labels, Woven Labels, and Taffeta Labels are the perfect solution for fashion brands, uniform suppliers, and textile manufacturers seeking premium branding options. We offer complete labeling solutions, including custom logos, sizes, colors, and fold styles. Our labels are made from eco-friendly and skin-safe materials, ensuring comfort for the wearer. Bulk production capabilities allow us to meet large orders with quick turnaround times. The soft finish of our labels enhances wearer comfort and adds a touch of luxury to your garments. Labels carry essential information such as size, care instructions, MRP, and country of origin. They also showcase your brand identity and help differentiate your clothing in the market. Our options include woven, printed, or heat transfer labels, all of which are washproof and fade-resistant. We support any size, fold, or cut, and can incorporate metallic threads and detailed logos. Our in-house weaving and printing facilities ensure strict quality control and fast delivery. We offer low minimum order quantities and sustainable material options for environmentally conscious brands.`,
@@ -204,7 +204,7 @@ export const labelServicesData = {
       ]
     },
     rfidLabelsSolutions: {
-      title: "RFID labels & RFID solutions",
+  title: "RFID Software Solutions & RFID Labels",
       slug: "rfid-labels-solutions",
       image: "/img10.jpg",
   about: `Our RFID Labels & RFID Solutions are designed to bring your business into the era of smart tracking and automation. We use the latest RFID technology to create custom labels that can be encoded with your specific data. Our solutions integrate seamlessly with your existing systems, whether you’re in retail, logistics, healthcare, or manufacturing. We support both bulk and small batch orders, providing flexibility for businesses of all sizes. Our expert technical guidance ensures you get the most out of your RFID investment. RFID enables real-time tracking and automation, reducing manual errors and improving inventory and asset management. It also enhances security and loss prevention, supporting compliance and reporting requirements. Our labels offer long-range and high-speed scanning, are durable and tamper-resistant, and can be customized for any application. Easy integration with ERP and WMS systems makes deployment straightforward. We offer cost-effective solutions for large-scale deployments and provide ongoing support and training. Our in-house RFID lab and testing facilities ensure quality and reliability.`,
@@ -238,7 +238,7 @@ export const labelServicesData = {
       ]
     },
     productTransparentLabels: {
-      title: "Product labels & Transparent labels",
+  title: "Product Labels, Transparent Labels,  Vinyle Labels & PVC Labels",
       slug: "product-transparent-labels",
       image: "/img9.png",
   about: `Our Product Labels & Transparent Labels are designed to give your products a seamless, professional appearance. We use crystal-clear materials that allow your product to shine through while providing essential information and branding. Custom die-cut shapes and sizes are available to fit any packaging, from bottles and jars to boxes and pouches. Our labels are print-ready for barcodes, logos, and product information, with matte, glossy, and foil finish options. We support bulk orders with quick delivery to meet your business needs. Transparent labels are ideal for cosmetics, food, and retail products, helping your brand stand out on crowded shelves. Our labels are waterproof and scratch-proof, with permanent, removable, and food-safe adhesive options. We use eco-friendly and recyclable materials for businesses focused on sustainability. Labels are compatible with both manual and machine application, making them versatile for any production process. Our advanced printing technology ensures ultra-clear labels with precision cutting for clean edges.`,
@@ -272,7 +272,7 @@ export const labelServicesData = {
       ]
     },
     bakeryFoodBeverageLabels: {
-      title: "Bakery labels, Foods product labels & Beverage labels",
+  title: "Bakery labels, Foods product labels & Beverage labels",
       slug: "bakery-food-beverage-labels",
       image: "/img7.jpg",
   about: `Our Bakery Labels, Food Product Labels, and Beverage Labels are crafted to enhance the shelf appeal of your products while ensuring compliance with food safety standards. We use food-safe inks and adhesives to protect your customers and your brand. Custom shapes and sizes are available for any type of packaging, from bottles and jars to boxes and wrappers. Our high-resolution, vibrant printing brings your designs to life, making your products irresistible to consumers. Labels are moisture and oil-resistant, ensuring they stay intact in challenging environments. We support both bulk and small batch orders, providing flexibility for businesses of all sizes. Our labels provide essential information such as ingredients, expiry dates, and MRP, building consumer trust and brand recall. Waterproof and freezer-safe options are available for products that require extra durability. We offer permanent and removable adhesives, as well as eco-friendly and recyclable materials. Fast delivery is guaranteed for urgent orders.`,
@@ -306,7 +306,7 @@ export const labelServicesData = {
       ]
     },
     voltageTransformerCableHologram: {
-      title: "Voltage & Transformer labels &Cable labels & Hologram labels",
+  title: "Voltage Transformer/Stabilizer Labels & Cable Industry Labels",
       slug: "voltage-transformer-cable-hologram",
       image: "/img8.jpg",
   about: `Our Voltage, Transformer, Cable, and Hologram Labels are engineered for the demanding requirements of industrial and electrical applications. We use high-durability materials that can withstand harsh environments, including exposure to chemicals, moisture, and extreme temperatures. Our labels are custom printed with voltage, cable, and transformer information to ensure safety and compliance. Tamper-evident hologram options provide an added layer of security against counterfeiting and unauthorized access. We support both bulk and urgent orders, delivering fast without compromising on quality. Our expert team offers advice on compliance labeling to help you meet regulatory and export requirements. Labels are weatherproof and chemical-resistant, with strong adhesion to metal, plastic, and cable surfaces. Custom shapes, sizes, and finishes are available to suit your specific needs. High-visibility printing ensures critical information is always easy to read. Our labels are long-lasting and fade-resistant, reducing the need for frequent replacements.`,
@@ -341,7 +341,7 @@ export const labelServicesData = {
     }
   ,
   softwareLabel: {
-    title: "Software Label",
+  title: "Software for Label Printing & QR Code Printing",
     slug: "software-label",
 
   video: "/software.mp4",

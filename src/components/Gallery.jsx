@@ -13,17 +13,20 @@ const Gallery = () => {
 const img6 = '/img6.png';
   const img7 = '/img7.jpg';
   const img8 = '/img8.jpg';
+  const img9 = '/img9.png';
+  const img10 = '/img10.jpg';
 
     const serviceImages = [
-  { id: 1, src: img1, alt: 'Barcode Generation & Label', name: 'Barcode Generation & Label', slug: labelServicesData.barcodeGenerationLabel.slug },
-  { id: 2, src: img5, alt: 'Mobile accessories & IMEI', name: 'Mobile accessories & IMEI', slug: labelServicesData.mobileAccessoriesIMEI.slug },
-      { id: 3, src: img3, alt: 'Product Labels & Hologram Labels', name: 'Product Labels & Hologram Labels', slug: labelServicesData.productHologramLabels.slug },
-      { id: 4, src: img4, alt: 'Label Printing', name: 'Label Printing', slug: labelServicesData.labelPrinting.slug },
-  { id: 5, src: img2, alt: 'Footwear Labels & Shop Label & Cartoon', name: 'Footwear Labels & Shop Label & Cartoon', slug: labelServicesData.footwearShopCartoon.slug },
-      { id: 6, src: img6, alt: 'Garment Labels & Woven Labels &Taffeta Label', name: 'Garment Labels & Woven Labels &Taffeta Label', slug: labelServicesData.garmentWovenTaffeta.slug },
-     
+      { id: 1, src: img1, alt: 'Barcode Generation, Label Design & Printing', name: 'Barcode Generation, Label Design & Printing', slug: labelServicesData.barcodeGenerationLabel.slug },
+      { id: 2, src: img5, alt: 'IMIE Label Printing & Mobile Accessories Labels', name: 'IMIE Label Printing & Mobile Accessories Labels', slug: labelServicesData.mobileAccessoriesIMEI.slug },
+      { id: 3, src: img3, alt: 'Product Labels, Hologram Labels, Security Labels and Tamper-proof Labels', name: 'Product Labels, Hologram Labels, Security Labels and Tamper-proof Labels', slug: labelServicesData.productHologramLabels.slug },
+      { id: 4, src: img4, alt: 'Label Printing & QR Code Printing Services', name: 'Label Printing & QR Code Printing Services', slug: labelServicesData.labelPrinting.slug },
+      { id: 5, src: img2, alt: 'Footwear Industry Labels & Carton Labels', name: 'Footwear Industry Labels & Carton Labels', slug: labelServicesData.footwearShopCartoon.slug },
+      { id: 6, src: img6, alt: 'Garments Labels, Woven Labels, Satin Labels & Taffeta Labels', name: 'Garments Labels, Woven Labels, Satin Labels & Taffeta Labels', slug: labelServicesData.garmentWovenTaffeta.slug },
+      { id: 7, src: img10, alt: 'RFID Software Solutions & RFID Labels', name: 'RFID Software Solutions & RFID Labels', slug: labelServicesData.rfidLabelsSolutions.slug },
+      { id: 8, src: img9, alt: 'Product Labels, Transparent Labels,  Vinyle Labels & PVC Labels', name: 'Product Labels, Transparent Labels,  Vinyle Labels & PVC Labels', slug: labelServicesData.productTransparentLabels.slug },
       { id: 9, src: img7, alt: 'Bakery labels, Foods product labels & Beverage labels', name: 'Bakery labels, Foods product labels & Beverage labels', slug: labelServicesData.bakeryFoodBeverageLabels.slug },
-      { id: 10, src: img8, alt: 'Voltage & Transformer labels &Cable labels & Hologram labels', name: 'Voltage & Transformer labels &Cable labels & Hologram labels', slug: labelServicesData.voltageTransformerCableHologram.slug },
+      
     ];
 
   return (
@@ -33,7 +36,7 @@ const img6 = '/img6.png';
           <h2 className="text-4xl font-bold text-gray-900 mb-2">Our Services</h2>
           <p className="text-lg text-gray-600">Discover our comprehensive range of services</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {serviceImages.map((image) => (
             <Link
               key={image.id}

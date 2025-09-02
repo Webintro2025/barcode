@@ -42,7 +42,21 @@ const Footer = () => {
                   scrollbarColor: '#2563eb #1e293b', // blue-600 thumb, slate-900 track
                 }}
               >
-                {Object.values(labelServicesData).map((service) => (
+                {/* Updated service names for footer, matching new list */}
+                {/* Updated service names for footer, matching user list exactly */}
+                {[
+                  { title: 'Barcode Generation , Label Design & Printing', slug: labelServicesData.barcodeGenerationLabel.slug },
+                  { title: 'IMIE Label Printing & Mobile Accessories Labels', slug: labelServicesData.mobileAccessoriesIMEI.slug },
+                  { title: 'Product Labels, Hologram Labels, Security Labels and Tamper-proof Labels', slug: labelServicesData.productHologramLabels.slug },
+                  { title: 'Label Printing & QR Code Printing Services', slug: labelServicesData.labelPrinting.slug },
+                  { title: 'Footwear Industry Labels & Carton Labels', slug: labelServicesData.footwearShopCartoon.slug },
+                  { title: 'Garments Labels, Woven Labels, Satin Labels & Taffeta Labels', slug: labelServicesData.garmentWovenTaffeta.slug },
+                  { title: 'RFID Software Solutions & RFID Labels', slug: labelServicesData.rfidLabelsSolutions.slug },
+                  { title: 'Product Labels, Transparent Labels,  Vinyle Labels & PVC Labels', slug: labelServicesData.productTransparentLabels.slug },
+                  { title: 'Bakery labels, Foods product labels & Beverage labels', slug: labelServicesData.bakeryFoodBeverageLabels.slug },
+                  { title: 'Voltage Transformer/Stabilizer Labels & Cable Industry Labels', slug: labelServicesData.voltageTransformerCableHologram.slug },
+                  { title: 'Software for Label Printing & QR Code Printing', slug: labelServicesData.softwareLabel.slug },
+                ].map((service) => (
                   <li key={service.slug}>
                     <Link
                       href={`/service/${service.slug}`}
@@ -95,6 +109,7 @@ const Footer = () => {
                   <div>
                     <p className="text-gray-300 text-sm">Phone</p>
                     <p className="text-white font-semibold">+91-9810244624</p>
+                    <p className="text-white font-semibold">Landline: 011-41584342</p>
                   </div>
                 </div>
                 

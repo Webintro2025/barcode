@@ -1,14 +1,33 @@
+"use client"
+import { FaWhatsapp } from "react-icons/fa";
 
-"use client";
-import { useState } from 'react';
-import Link from 'next/link';
-import { labelServicesData } from '@/lib/services';
-import { FaWhatsapp } from 'react-icons/fa';
-
+import React, { useState } from "react";
+import Link from "next/link";
+import { labelServicesData } from "../lib/services";
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Updated services list with new display names (match Gallery.jsx)
+  const servicesList = [
+    { title: 'Barcode Generation , Label Design & Printing', slug: labelServicesData.barcodeGenerationLabel.slug },
+    { title: 'IMIE Label Printing & Mobile Accessories Labels', slug: labelServicesData.mobileAccessoriesIMEI.slug },
+    { title: 'Product Labels, Hologram Labels, Security Labels and Tamper-proof Labels', slug: labelServicesData.productHologramLabels.slug },
+    { title: 'Label Printing & QR Code Printing Services', slug: labelServicesData.labelPrinting.slug },
+    { title: 'Footwear Industry Labels & Carton Labels', slug: labelServicesData.footwearShopCartoon.slug },
+    { title: 'Garments Labels, Woven Labels, Satin Labels & Taffeta Labels', slug: labelServicesData.garmentWovenTaffeta.slug },
+    { title: 'RFID Software Solutions & RFID Labels', slug: labelServicesData.rfidLabelsSolutions.slug },
+    { title: 'Product Labels, Transparent Labels,  Vinyle Labels & PVC Labels', slug: labelServicesData.productTransparentLabels.slug },
+    { title: 'Bakery labels, Foods product labels & Beverage labels', slug: labelServicesData.bakeryFoodBeverageLabels.slug },
+    { title: 'Voltage Transformer/Stabilizer Labels & Cable Industry Labels', slug: labelServicesData.voltageTransformerCableHologram.slug },
+    { title: 'Software for Label Printing & QR Code Printing', slug: labelServicesData.softwareLabel.slug },
+  ];
+
+  const handleNavClick = () => {
+    setIsMobileMenuOpen(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -18,39 +37,20 @@ const Navbar = () => {
     setIsServicesDropdownOpen(!isServicesDropdownOpen);
   };
 
-  const handleNavClick = () => {
-    setIsMobileMenuOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-
-  // Services list with slugs from labelServicesData
-  const servicesList = [
-    { title: 'Barcode Generation & Label', slug: labelServicesData.barcodeGenerationLabel.slug },
-  { title: 'Mobile accessories & IMEI', slug: labelServicesData.mobileAccessoriesIMEI.slug },
-    { title: 'Product Labels & Hologram Labels', slug: labelServicesData.productHologramLabels.slug },
-    { title: 'Label Printing', slug: labelServicesData.labelPrinting.slug },
-  { title: 'Footwear Labels & Shop Label & Cartoon', slug: labelServicesData.footwearShopCartoon.slug },
-    { title: 'Garment Labels & Woven Labels &Taffeta Label', slug: labelServicesData.garmentWovenTaffeta.slug },
-    { title: 'RFID labels & RFID solutions', slug: labelServicesData.rfidLabelsSolutions.slug },
-    { title: 'Product labels & Transparent labels', slug: labelServicesData.productTransparentLabels.slug },
-    { title: 'Bakery labels, Foods product labels & Beverage labels', slug: labelServicesData.bakeryFoodBeverageLabels.slug },
-    { title: 'Voltage & Transformer labels &Cable labels & Hologram labels', slug: labelServicesData.voltageTransformerCableHologram.slug },
-    { title: 'Software Label', slug: labelServicesData.softwareLabel.slug },
-  ];
-
   return (
     <nav className="fixed top-10 sm:top-12 left-0 right-0 z-50 bg-white shadow-lg shadow-gray-400">
       <div className="flex items-center justify-between px-4 sm:px-5 lg:px-8 py-4">
         {/* Logo/Brand */}
-        <div className="text-lg sm:text-xl font-bold bg-gradient-to-r from-gray-800 to-gray-900 bg-clip-text text-transparent truncate">
+        <Link href="/" className="text-lg sm:text-xl font-bold bg-gradient-to-r from-gray-800 to-gray-900 bg-clip-text text-transparent truncate focus:outline-none">
           S.R.S.B. Barcode Solutions
-        </div>
+        </Link>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-6 lg:space-x-8 text-base font-semibold">
           <li><Link href="/" className="hover:text-indigo-600 transition-colors">Home</Link></li>
           <li><Link href="/about" className="hover:text-indigo-600 transition-colors">About</Link></li>
+          <li><Link href="/all-products-services" className="hover:text-indigo-600 transition-colors">All Products</Link></li>
+          <li><Link href="/all-services" className="hover:text-indigo-600 transition-colors">All Services</Link></li>
           <li className="relative">
             <button 
               className="hover:text-indigo-600 transition-colors flex items-center gap-1"
@@ -142,6 +142,15 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+              <Link 
+                href="/all-products-services" 
+                className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600 hover:bg-indigo-50 rounded-md transition-colors"
+                onClick={handleNavClick}
+              >
+                All Products 
+              </Link>
+            </li>
+            <li>
               <div className="relative">
                 <button 
                   className="w-full text-left px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600 hover:bg-indigo-50 rounded-md transition-colors"
@@ -153,7 +162,7 @@ const Navbar = () => {
                 {isServicesDropdownOpen && (
                   <div className="mt-2 ml-4 space-y-1 bg-gray-50 rounded-md p-2">
                     {servicesList.map((service, index) => (
-                      <Link
+                      <Link 
                         key={index}
                         href={`/service/${service.slug}`}
                         className="block px-3 py-2 text-sm text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 rounded-md transition-all duration-200"
@@ -175,6 +184,16 @@ const Navbar = () => {
                 Contact Us
               </Link>
             </li>
+
+              <li>
+              <Link 
+                href="/all-services" 
+                className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600 hover:bg-indigo-50 rounded-md transition-colors"
+                onClick={handleNavClick}
+              >
+                All Services  
+              </Link>
+            </li>
           </ul>
           
           {/* Mobile CTA Button */}
@@ -194,6 +213,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;
