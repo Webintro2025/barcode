@@ -11,7 +11,7 @@ export  function generateMetadata({ params }) {
       `Mobile Accessories Labels in ${location}`
     ],
     alternates: {
-      canonical: `https://www.yoursite.com/${params.location || ""}`
+      canonical: `https://www.srsbbarcode.com/${params.location || ""}`
     }
   };
 }
