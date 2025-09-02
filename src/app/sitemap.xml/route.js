@@ -2,7 +2,7 @@ import MarketPlace from '../../MarketPlace';
 import { labelServicesData } from '../../lib/services';
 
 export async function GET() {
-  const baseUrl = 'https://yourdomain.com'; // Change to your actual domain
+  const baseUrl = 'https://srsbbarcode.com'; // Change to your actual domain
 
   // Static pages
   const staticPages = [
