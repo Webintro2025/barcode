@@ -1,6 +1,6 @@
 import MarketPlace from '../../MarketPlace';
 import { labelServicesData } from '../../lib/services';
-
+import location from '@/Location';
 export async function GET() {
   const baseUrl = 'https://srsbbarcode.com'; // Change to your actual domain
 
@@ -21,11 +21,15 @@ export async function GET() {
   const locationPages = MarketPlace.map(
     (loc) => `/${loc.replace(/\s+/g, '')}`
   );
+  const locationInPages = location.map(
+    (loc) => `/in/${loc.replace(/\s+/g, '')}`
+  );
 
   const allPages = [
     ...staticPages,
     ...servicePages,
     ...locationPages,
+    ...locationInPages,
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n` +

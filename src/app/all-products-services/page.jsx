@@ -94,33 +94,18 @@ const allLabels = [
 ];
 
 export default function AllProductsServicesPage() {
-  // Split the list into two nearly equal columns
-  const mid = Math.ceil(allLabels.length / 2);
-  const col1 = allLabels.slice(0, mid);
-  const col2 = allLabels.slice(mid);
-
   return (
-    <div className="min-h-screen bg-white pt-28 pb-8 ">
-      <div >
-        <div className="relative flex  bg-purple-500 h-60 justify-center mb-10">
-          <span className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-16rounded-xl blur-sm opacity-60"></span>
-          <h1 className="relative text-3xl mt-20 sm:text-4xl font-bold text-center text-white font-serif px-8 py-4 z-10 drop-shadow-lg">
-            All Products
-          </h1>
-        </div>
-        <div className="flex justify-center px-3">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 w-full max-w-3xl">
-          <ol className="list-decimal list-inside space-y-2 text-gray-800 text-base sm:text-lg">
-            {col1.map((label, idx) => (
-              <li key={idx}>{label}</li>
-            ))}
-          </ol>
-          <ol className="list-decimal list-inside space-y-2 text-gray-800 text-base sm:text-lg" start={mid + 1}>
-            {col2.map((label, idx) => (
-              <li key={idx}>{label}</li>
-            ))}
-          </ol>
-          </div>
+    <div className="min-h-screen bg-white py-10 px-4 sm:px-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-900 font-serif">
+          FULL LIST OF LABELS AVAILABLE
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {allLabels.map((label, idx) => (
+            <div key={idx} className="bg-purple-50 border border-purple-200 rounded-lg px-4 py-3 text-gray-800 text-sm sm:text-base font-medium shadow-sm hover:bg-purple-100 transition-colors">
+              {label}
+            </div>
+          ))}
         </div>
       </div>
     </div>

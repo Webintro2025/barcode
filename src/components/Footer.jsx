@@ -14,9 +14,9 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="mb-4">
               <Link href="/">
-                <h2 className="text-2xl font-bold text-white mb-2 cursor-pointer" style={{fontFamily: 'Montserrat, sans-serif'}}>
+                <h3 className="text-2xl font-bold text-white mb-2 cursor-pointer" style={{fontFamily: 'Montserrat, sans-serif'}}>
                   S.R.S.B.
-                </h2>
+                </h3>
               </Link>
               <p className="text-sm text-blue-400 font-medium mb-3">
                 Barcode Solutions

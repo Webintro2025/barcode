@@ -41,9 +41,9 @@ const Navbar = () => {
     <nav className="fixed top-10 sm:top-12 left-0 right-0 z-50 bg-white shadow-lg shadow-gray-400">
       <div className="flex items-center justify-between px-4 sm:px-5 lg:px-8 py-4">
         {/* Logo/Brand */}
-        <Link href="/" className="text-lg sm:text-xl font-bold bg-gradient-to-r from-gray-800 to-gray-900 bg-clip-text text-transparent truncate focus:outline-none">
+        <div className="text-lg sm:text-xl font-bold bg-gradient-to-r from-gray-800 to-gray-900 bg-clip-text text-transparent truncate">
           S.R.S.B. Barcode Solutions
-        </Link>
+        </div>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-6 lg:space-x-8 text-base font-semibold">
@@ -187,7 +187,7 @@ const Navbar = () => {
 
               <li>
               <Link 
-                href="/all-services" 
+                href="/all-products-services" 
                 className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600 hover:bg-indigo-50 rounded-md transition-colors"
                 onClick={handleNavClick}
               >

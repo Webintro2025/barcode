@@ -51,9 +51,9 @@ const ConsultationForm = () => {
       aria-label="Get A Free Consultation Form" 
       className="relative z-10 bg-white rounded-3xl p-8 mt-12 lg:mt-0 lg:ml-16 w-full max-w-md shadow-lg border border-gray-200"
     >
-      <h3 className="text-center text-lg mb-6 font-serif text-black">
+      <h2 className="text-center text-lg mb-6 font-serif text-black">
         Get A Free Consultation!
-      </h3>
+      </h2>
       <input 
         name="fullName"
         value={formData.fullName}
