@@ -1,35 +1,37 @@
 import MarketPlace from '../../MarketPlace';
 import { labelServicesData } from '../../lib/services';
 import location from '@/Location';
-export async function GET() {
-  const baseUrl = 'https://srsbbarcode.com'; // Change to your actual domain
 
-  // Static pages
+export async function GET() {
+  const baseUrl = 'https://srsbbarcode.com';
+
   const staticPages = [
     '',
     '/about',
     '/contact',
-   
   ];
 
-  // Service pages
   const servicePages = Object.values(labelServicesData).map(
     (service) => `/service/${service.slug}`
   );
 
-  // Location pages
   const locationPages = MarketPlace.map(
     (loc) => `/${loc.replace(/\s+/g, '')}`
   );
-  const locationInPages = location.map(
-    (loc) => `/in/${loc.replace(/\s+/g, '')}`
+
+ 
+
+  // NEW: garments labels pages
+  const garmentsLocationPages = location.map(
+    (loc) => `/garments-labels-manufacturer-in/${loc}`
   );
 
   const allPages = [
     ...staticPages,
     ...servicePages,
     ...locationPages,
-    ...locationInPages,
+  
+    ...garmentsLocationPages, // add here
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n` +
