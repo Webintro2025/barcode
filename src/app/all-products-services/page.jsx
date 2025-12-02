@@ -95,7 +95,7 @@ const allLabels = [
 
 export default function AllProductsServicesPage() {
   return (
-    <div className="min-h-screen bg-white py-10 px-4 sm:px-8">
+    <div className="min-h-screen bg-white py-10 mt-14 px-4 sm:px-8">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-900 font-serif">
           FULL LIST OF LABELS AVAILABLE

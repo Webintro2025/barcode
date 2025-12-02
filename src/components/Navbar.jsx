@@ -50,7 +50,7 @@ const Navbar = () => {
           <li><Link href="/" className="hover:text-indigo-600 transition-colors">Home</Link></li>
           <li><Link href="/about" className="hover:text-indigo-600 transition-colors">About</Link></li>
           <li><Link href="/all-products-services" className="hover:text-indigo-600 transition-colors">All Products</Link></li>
-          
+          <li><Link href="/all-services" className="hover:text-indigo-600 transition-colors">All Services</Link></li>
           <li className="relative">
             <button 
               className="hover:text-indigo-600 transition-colors flex items-center gap-1"
@@ -148,6 +148,15 @@ const Navbar = () => {
                 onClick={handleNavClick}
               >
                 All Products 
+              </Link>
+            </li>
+             <li>
+              <Link 
+                href="/all-services" 
+                className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600 hover:bg-indigo-50 rounded-md transition-colors"
+                onClick={handleNavClick}
+              >
+                All Services
               </Link>
             </li>
             <li>
