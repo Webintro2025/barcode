@@ -3,7 +3,7 @@ import locationList from '@/Location';
 
 
 export function generateMetadata({ params }) {
-	const rawLocation = params?.location || "india";
+	const rawLocation = params?.location ;
 
 	const locationName = decodeURIComponent(rawLocation)
 		.replace(/-/g, " ")
