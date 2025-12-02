@@ -38,7 +38,7 @@ export default function LocationPage({ params }) {
       className="mt-4 sm:mt-6 bg-red-600 hover:bg-red-700 text-white text-[10px] xs:text-xs sm:text-sm md:text-base font-normal py-1.5 xs:py-2 px-4 xs:px-6 rounded-full flex items-center space-x-2 shadow"
       type="button"
     >
-      <span><a href="https://apsinstrument.in/contact">Contact Now</a></span>
+      <span><a href="https://srsbbarcode.com/contact">Contact Now</a></span>
       <i className="fas fa-arrow-right"></i>
     </button>
   </div>
