@@ -2,8 +2,8 @@
 import { labelServicesData } from '@/lib/services';
 import { notFound } from 'next/navigation';
 
-export default function ServicePage({ params }) {
-  const { slug } = params;
+export default async function ServicePage({ params }) {
+  const { slug } = await params; // ✅ REQUIRED
   // Find the service by slug in labelServicesData (support both old and new structures)
   const service = Object.values(labelServicesData).find(s => s.slug === slug || s.title?.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug);
 

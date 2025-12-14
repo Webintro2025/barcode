@@ -24,7 +24,11 @@ const Navbar = () => {
     { title: 'Software for Label Printing & QR Code Printing', slug: labelServicesData.softwareLabel.slug },
   ];
 
-  const handleNavClick = () => {
+  const handleNavClick = (e, service) => {
+    if (service) {
+      // Debug log for slug and URL
+      console.log('Clicked service:', service.slug, `/service/${service.slug}`);
+    }
     setIsMobileMenuOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -74,7 +78,7 @@ const Navbar = () => {
                     key={index}
                     href={`/service/${service.slug}`}
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-700 transition-all duration-200 border-l-3 border-transparent hover:border-indigo-500"
-                    onClick={handleNavClick}
+                    onClick={e => handleNavClick(e, service)}
                   >
                     {service.title}
                   </Link>

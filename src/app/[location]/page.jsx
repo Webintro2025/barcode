@@ -1,8 +1,8 @@
 import ConsultationForm from '@/components/ConsultationForm';
 import MarketPlace from '../../MarketPlace';
 
-export default function LocationPage({ params }) {
-  const { location } = params;
+export default  async function  LocationPage({ params }) {
+  const { location } = await params;
   // Normalize for case-insensitive match
   const locationName = MarketPlace.find(
     (loc) => loc.replace(/\s+/g, '').toLowerCase() === location.replace(/\s+/g, '').toLowerCase()

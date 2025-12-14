@@ -2,8 +2,8 @@ import ConsultationForm from '@/components/ConsultationForm';
 import locationList from '@/Location';
 
 
-export function generateMetadata({ params }) {
-	const rawLocation = params?.location ;
+export async function generateMetadata({ params }) {
+  const rawLocation = params?.location;
 
 	const locationName = decodeURIComponent(rawLocation)
 		.replace(/-/g, " ")
@@ -38,7 +38,9 @@ export function generateMetadata({ params }) {
 	];
 
 	const baseUrl = "https://www.srsbbarcode.com/in";
-	const pathSegment = encodeURIComponent(rawLocation.toLowerCase());
+	// Defensive: ensure rawLocation is defined and a string
+	const safeRawLocation = typeof rawLocation === 'string' ? rawLocation : '';
+	const pathSegment = encodeURIComponent(safeRawLocation.toLowerCase());
 	const canonicalUrl = `${baseUrl}/${pathSegment}`;
 
 	return {
@@ -60,8 +62,8 @@ export function generateMetadata({ params }) {
 
 
 
-export default function LocationPage({ params }) {
-  const { location } = params;
+export default async function LocationPage({ params }) {
+  const { location } = await   params;
 
   // Check if slug exists in our location list (all lowercase with hyphens)
   const slugExists = locationList.includes(location.toLowerCase());
@@ -84,6 +86,7 @@ export default function LocationPage({ params }) {
 
   return (
     <>
+
 
       <main className="w-full ">
      
