@@ -25,13 +25,16 @@ export async function GET() {
   const garmentsLocationPages = location.map(
     (loc) => `/garments-labels-manufacturer-in/${loc}`
   );
-
+  const rfid = location.map(
+    (loc) => `/rfid-tag-labels-manufacturer-in/${loc}`
+  );
   const allPages = [
     ...staticPages,
     ...servicePages,
     ...locationPages,
   
     ...garmentsLocationPages, // add here
+    ...rfid, // add here
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n` +
